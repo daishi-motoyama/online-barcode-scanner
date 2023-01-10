@@ -1,7 +1,6 @@
 ## SITE URL
 https://online-barcode-scanner.netlify.app/
 
-***
 
 ## Develop
 
