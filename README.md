@@ -1,3 +1,10 @@
+## SITE URL
+https://online-barcode-scanner.netlify.app/
+
+***
+
+## Develop
+
 ### git clone
 https://github.com/daishi-motoyama/online-barcode-scanner.git
 
