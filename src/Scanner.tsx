@@ -4,7 +4,7 @@ import { useMemo, useRef } from 'react'
 import { useDebounce } from 'react-use'
 
 type ScannerProps = {
-  onReadCode: (text: Result) => void
+  onReadCode?: (text: Result) => void
 }
 
 export const Scanner = ({ onReadCode }: ScannerProps) => {
@@ -19,9 +19,9 @@ export const Scanner = ({ onReadCode }: ScannerProps) => {
         console.log('ERROR!! : ', error)
         return
       }
-      onReadCode(result)
+      onReadCode?.(result)
     })
-  }, 1000)
+  }, 2000)
 
-  return <video style={{ height: '100%', maxHeight: '100%', maxWidth: '100%' }} ref={videoRef} />
+  return <video style={{ width: '100%' }} ref={videoRef} />
 }
