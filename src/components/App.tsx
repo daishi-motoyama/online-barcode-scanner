@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Scanner } from './Scanner'
 import { useCopyToClipboard } from 'react-use'
 import { Alert, Box, Button, Container, Stack, TextField, useMediaQuery, useTheme } from '@mui/material'
-import { useToast } from './useToast'
+import { useToast } from '../hooks/useToast'
 
 export const App = () => {
   const [codes, setCodes] = useState<string[]>([])
